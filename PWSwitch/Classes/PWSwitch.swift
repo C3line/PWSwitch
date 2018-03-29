@@ -716,6 +716,7 @@ open class PWSwitch: UIControl {
                 
                 thumbLayer.position = getThumbOnPos()
                 thumbLayer.borderColor = thumbOnBorderColor?.cgColor
+                thumbLayer.backgroundColor = thumbOnFillColor?.cgColor
             } else {
                 if (shouldFillOnPush) {
                     backLayer.borderWidth = 1
@@ -725,6 +726,7 @@ open class PWSwitch: UIControl {
                 
                 thumbLayer.position = getThumbOffPos()
                 thumbLayer.borderColor = thumbOffBorderColor?.cgColor
+                thumbLayer.backgroundColor = thumbOffFillColor?.cgColor
             }
         }
     }
